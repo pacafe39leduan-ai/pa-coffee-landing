@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: "vi"
+
+collections:
+  - name: "website"
+    label: "Nội dung website"
+    files:
+      - name: "site"
+        label: "Thông tin chính"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Ảnh bìa", name: "hero_image", widget: "image" }
+          - { label: "Tiêu đề bìa - dòng 1", name: "hero_title_line_1", widget: "string" }
+          - { label: "Tiêu đề bìa - dòng 2", name: "hero_title_line_2", widget: "string" }
+          - { label: "Giới thiệu ngắn", name: "hero_intro", widget: "text" }
+          - { label: "Hotline hiển thị", name: "phone_display", widget: "string" }
+          - { label: "Hotline chỉ gồm số", name: "phone_number", widget: "string" }
+          - { label: "Link Facebook", name: "facebook_url", widget: "string" }
+          - { label: "Địa chỉ", name: "address", widget: "string" }
